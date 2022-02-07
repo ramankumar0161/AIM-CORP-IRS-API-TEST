@@ -26,15 +26,15 @@ namespace IrsSubmission.Submission
             SubmissionResponse oResonse = new SubmissionResponse();
             try
             {
-                if (submission.environment == "p" || submission.environment == "P")
-                {
-                    context = new ServiceContext(new ClientInfo(submission.etin, submission.appSysId,WCFClient.TestCdType.P));
-                }
-                else
-                {
-                    context = new ServiceContext(new ClientInfo(submission.etin, submission.appSysId, WCFClient.TestCdType.T));
-                }
-                
+                //if (submission.environment == "p" || submission.environment == "P")
+                //{
+                //    context = new ServiceContext(new ClientInfo(submission.etin, submission.appSysId,WCFClient.TestCdType.P));
+                //}
+                //else
+                //{
+                context = new ServiceContext(new ClientInfo(submission.etin, submission.appSysId, WCFClient.TestCdType.T));
+                //}
+
                 if (context != null)
                 {
                     LoginClient client = new LoginClient();
@@ -100,15 +100,15 @@ namespace IrsSubmission.Submission
             AckResponse oResonse = new AckResponse();
             try
             {
-                if (Ack.environment == "p" || Ack.environment == "P")
-                {
-                    context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.P));
-                }
-                else
-                {
-                    context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.T));
-                }
-                
+                //if (Ack.environment == "p" || Ack.environment == "P")
+                //{
+                //    context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.P));
+                //}
+                //else
+                //{
+                context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.T));
+                //}
+
                 if (context != null)
                 {
                     LoginClient client = new LoginClient();
@@ -116,7 +116,7 @@ namespace IrsSubmission.Submission
                     LoginResult Loginresult = client.Invoke(context);
                     msg = "login success";
                     // Create object of SubmissionBuilder over here
-                   // GetAckClient ackClient = new GetAckClient(@"D:\Aim Corporation\Desktop Application\Acknowledgement");
+                    // GetAckClient ackClient = new GetAckClient(@"D:\Aim Corporation\Desktop Application\Acknowledgement");
                     GetAckClient ackClient = new GetAckClient();
                     msg = "ack client start";
                     GetAckResult result = ackClient.Invoke(context, Ack.submissionId);

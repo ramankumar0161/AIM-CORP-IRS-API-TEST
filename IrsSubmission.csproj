@@ -46,15 +46,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Version Toolkit\MeF_Client_SDK\dotNET\dist\mef_client_sdk\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="MeFWCFClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Version_12.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\MeFWCFClient.dll</HintPath>
+    <Reference Include="MeFWCFClient">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\MeFWCFClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\IRS API Version\Version_13.1\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />

@@ -6,14 +6,7 @@ using MeF.Client.Services.MSIServices;
 using MeF.Client.Services.TransmitterServices;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
-using System.Linq;
 using System.Text;
-using System.Web;
-using System.Web.Hosting;
-using System.Web.Http;
-using static IrsSubmission.Controllers.ValuesController;
 
 namespace IrsSubmission.Submission
 {

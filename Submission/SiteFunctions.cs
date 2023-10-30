@@ -57,7 +57,7 @@ namespace IrsSubmission.Submission
                     // Relpace the path : "D:\Aim Corporation\Desktop Application\Container" with path where you want to keep the submissions results
                     SendSubmissionsClient client1 = new SendSubmissionsClient();
                     // Create Container which we will send to IRS as Submission using path and Archive
-                    // Replace the path "D:\Aim Corporation\Desktop Application\Container" with path where you actully want to store the Container files on system
+                   
                     SubmissionContainer container = builder.CreateSubmissionContainer(archives);
                     // Here we send the submissions to IRS using Globle ServiceContext and container just created
                     SendSubmissionsResult result = client1.Invoke(context, container);

@@ -46,31 +46,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=1.2.0.246, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="MeFWCFClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\MeFWCFClient.dll</HintPath>
+      <HintPath>Files\mef_client_sdk_15\MeFWCFClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\IRS API Version\IRS_A2A_Toolkit20231003154107\Version_14\Version_14.0\MeF_Client_SDK\dotNET\dist\mef_client_sdk\mef_client_sdk\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -198,6 +178,12 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Files\mef_client_sdk_15\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Files\mef_client_sdk_15\MeFWCFClient.dll" />
+    <Content Include="Files\mef_client_sdk_15\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Files\mef_client_sdk_15\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="Files\mef_client_sdk_15\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="Files\mef_client_sdk_15\Microsoft.Practices.Unity.dll" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -221,6 +207,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Files\mef_client_sdk_15\mefclientsdk.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

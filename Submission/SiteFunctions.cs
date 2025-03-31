@@ -79,7 +79,40 @@ namespace IrsSubmission.Submission
                 string certFilePath = Path.Combine(currentDirectory, filePath);
                 string certPassword = "Bebomat01@@";
                 X509Certificate2 certificate = new X509Certificate2(certFilePath, certPassword);
+                X509Store store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
+                try
+                {
+                    // Open the store with read-write access
+                    store.Open(OpenFlags.ReadWrite);
+                    bool certificateExists = false;
 
+                    foreach (var cert in store.Certificates)
+                    {
+                        if (cert.Thumbprint.Equals(certificate.Thumbprint, StringComparison.OrdinalIgnoreCase))
+                        {
+                            certificateExists = true;
+                            break;
+                        }
+                    }
+
+                    if (!certificateExists) {
+                        // Add the certificate to the store
+                        store.Add(certificate);
+                    } 
+
+                    //Console.WriteLine("Certificate successfully added to the LocalMachine store.");
+                }
+                catch (Exception ex)
+                {
+                    oResonse.MessageID = "";
+                    oResonse.Relatesto = msg;
+                    oResonse.Statustxt = $"Error adding certificate to store: {ex.Message}";
+                }
+                finally
+                {
+                    // Close the store after operations
+                    store.Close();
+                }
                 context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.T));
                 
 

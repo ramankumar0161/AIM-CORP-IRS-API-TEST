@@ -6,6 +6,8 @@ using MeF.Client.Services.MSIServices;
 using MeF.Client.Services.TransmitterServices;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace IrsSubmission.Submission
@@ -72,13 +74,19 @@ namespace IrsSubmission.Submission
             AckResponse oResonse = new AckResponse();
             try
             {
-               
+                string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                string filePath = @"Files\Certificate\AimCertificateForIRS20230615\AimCertificateForIRS20230615.pfx";
+                string certFilePath = Path.Combine(currentDirectory, filePath);
+                string certPassword = "Bebomat01@@";
+                X509Certificate2 certificate = new X509Certificate2(certFilePath, certPassword);
+
                 context = new ServiceContext(new ClientInfo(Ack.etin, Ack.appSysId, WCFClient.TestCdType.T));
-            
+                
 
                 if (context != null)
                 {
                     LoginClient client = new LoginClient();
+                   
                     msg = "login start";
                     LoginResult Loginresult = client.Invoke(context);
                     msg = "login success";

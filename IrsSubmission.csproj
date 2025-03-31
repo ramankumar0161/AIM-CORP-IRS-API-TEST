@@ -178,6 +178,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Files\Certificate\Password.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\mef_client_sdk_15\ICSharpCode.SharpZipLib.dll" />
     <Content Include="Files\mef_client_sdk_15\MeFWCFClient.dll" />
     <Content Include="Files\mef_client_sdk_15\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
@@ -208,6 +211,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Files\mef_client_sdk_15\mefclientsdk.config" />
+    <Content Include="Files\Certificate\AimCertificateForIRS20230615\AimCertificateForIRS20230615.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
